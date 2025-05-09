@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input</title>
+</head>
+<!-- 
+    input type:
+
+            button -> Se comporta igual que un boton <button>
+            color -> Se utiliza para especificar un color.
+            date -> Se utiliza para introducir una fecha 
+            datetime -> Obsolecto
+            datetime-local -> Fecha y hora, no funciona en Firefox.
+                Tip:
+                    Se recomienda usar datetime-local y time para selecionar fache y hora
+                    hidden -> Campo oculto, puede contener valor pero no se mostrara
+            moth-> Se utilizara para introducir un mes
+            Email -> Se utiliza para introducir un email.
+            color -> Se utiliza para especificar un color
+            Number -> Se utiliza para valores numericos.
+            passaword -> Se utiliza para contraseñas
+            range -> Se utiliza para establecer un rango
+            reset -> Se utiliza para resetear un formulario
+            search -> Se utiliza para la barras de busqueda
+            submit -> Se utiliza para enviar un formulario
+            tel -> Se utiliza para introducir numeros telefonicos
+            text -> Valor por defecto
+            time -> Se utiliza para introducir una hora 
+            url -> Se utiliza para introducir URls
+            week -> Se utiliza para introducir el numero de semana del año.
+
+ -->
+<body>
+    <form>
+        <input> 
+        <!-- Solo sirve usar un input con otro input tipo button para JavaScript ya que este no envia el formulario
+        pero la etiqueta <button> si lo hace 
+        
+            Si se quiere enviar el formulario se usa otro tipo de input que es en este caso submit.
+        -->
+        <h2>Este es un tipo de input que se comportar parecido a la etiqueta botom</h2>    
+        <input type="button" value="Enviar input">
+        <input type="search" value="Enviar formulario">
+        <hr>
+        <h2>Este es la etiqueta botom directamente</h2>
+        <button>Enviar</button>
+        <!-- <button>Enviar</button> -->
+        <hr>
+        <h2>Estes un tipo de imput de fecha</h2>
+        <input type="date">
+        
+        <hr>
+        <h2> Input type date</h2>
+        <input type="datetime">
+        <p> este tipo de input no se usa mas ya que quedo obsolecto y se ve igual que la etiqueta input normal</p>
+        <hr>
+        <label>Este es un tipo de input que utiliza la hora y fecha juntosa</h2>
+        <input type="datetime-local">
+        <p>Este input funciona solo en google pero no firefox </p>
+        <!-- Este no funciona en firefox -->
+        <hr>
+        <label>Forma para que funcione en firefox</label>
+        <input type="date">
+        <input type="time">
+        <hr>
+        <input type="month">
+        <hr>
+        <input type="week">
+        
+    </form>
+
+    
+</body>
+</html>

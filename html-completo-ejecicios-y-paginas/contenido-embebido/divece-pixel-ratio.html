@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido embebido</title>
+    <!-- <style>
+        img {
+            max-width: 100%;
+        }
+    </style> -->
+</head>
+<!-- 
+    DPR(Device Pixel Ratio): Es la relacion que existe entre los pixeles reales que tiene el dispositivo y los pixeles
+    que tenemos disponibles para "pintar" contenido.
+
+    DPR = pixeles reales / pixeles disponibles.
+
+    en la consola si se coloca la orden deivePixelRatio este te muestra el radio que tienes sin ir a ninguna pagina externa
+    de la imagen
+
+    es recomendable cambiar la cantidad de pixeles tanto para moviles como para pc ya que ocupa espacio 
+    por mas que se pueda reducir 
+
+    srcset se pueden colocar varias directorios de imagenes que se habre dependidendo de la resolcuion de el usurio
+    que habra y tambien en caso de funcionar srcset tenemos e src que habra directamente una imagen
+ -->
+<body>
+    <header>
+        <h1>Contenido embebido</h1>
+    </header>
+    <main>
+        <!-- <img src="/aseets/imagenes/leaf-176722.jpg" alt="pasto"> -->
+        <!-- <img src="/aseets/imagenes/base11Remotask.png" alt="prueba" width="300" alt=""> -->
+        <img srcset="/aseets/imagenes/leaf-176722.jpg, /aseets/imagenes/background-3017167.jpg" alt="iamgen">
+    </main>
+</body>
+</html>

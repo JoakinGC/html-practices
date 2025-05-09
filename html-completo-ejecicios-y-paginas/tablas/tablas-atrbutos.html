@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <header> 
+             <h1>Tablas</h1>
+        </header>
+     </section>
+     <!-- 
+         Para hacer celdas que ocupen mas de una fila o mas de una columna tenemos 2 atributos:
+             rowspan: sirve para que cada celda ocupe mas de una fila, al valor por defecto 1
+             colspan sirve para que una celda ocupe mas de una columna, el valor por defecto es 1
+
+       cuando necesitamos selecionar una columna, tenemos la etiqueta colgroup, que nos permite seleccionar una columna
+       en concreto. Dentro podremos tantas etiquetas col como columna  que tengamos, cada etiqueta col equivaldra
+       a una columna siguiente el mismo orden que tienen en la tabla.
+
+       Si necesitamos que una etiqueta col agrupa mas de una columna, tenemos el atributo span, que funciona exactamente igual 
+       que rowspan y colspan.
+      -->
+      <!-- <style>
+          td {
+              background-color: steelblue;
+          }
+      </style>
+       -->
+       <style>
+           colgroup
+           {
+               background-color: steelblue;
+           }
+       </style>
+     <main>
+         <section>
+             <table>
+                 <colgroup>
+                    <!-- 
+                        etiqueta grupo de columnas se colocala la cantidad de etiquetas col que se tengan en la tabla por ende este caso son 
+                        son 6 columnas 
+                     -->
+                     <col>
+                     <col>
+                     <col>
+                     <col>
+                     <col>
+                     <col>
+                     
+
+                 </colgroup>
+                 <caption>HORARIO DE CLASES</caption>
+                 <thead>
+                     <tl>
+                          <th></th>
+                          <th>L</th>
+                          <th>M</th>
+                          <th>X</th>
+                          <th>J</th>
+                          <th>V</th>
+                     </tl>
+                 </thead>
+                 <tbody>
+                     <tr>
+   
+                        <td>8:30 - 9:30</td>
+                        <td>Matematicas</td>
+                        <td>Sociales</td>
+                        <td>Matematicas</td>
+                        <td>Matematicas</td>
+                        <td>Matematicas </td>
+               </tr>
+               <tr>
+                        <td>9:30 - 10:25</td>
+                        <td>Lengua </td>
+                        <td>Lengua </td>
+                        <td>Matematicas </td>
+                        <td>Ciencia </td>
+                        <td>Lengua </td>
+               </tr>
+               <tr>
+                        <td>10:25 - 11:20</td>
+                        <td>Ciencias Sociales </td>
+                        <td>Educación Física </td>
+                        <td>Lengua </td>
+                        <td>Lengua </td>
+                        <td>Educacion Física </td>
+               </tr>
+               <tr>
+                        <td>11:20 - 11:45</td>
+                        <td colspan="5"> Recreo </td>
+                   
+                 </tr>
+                 <tr>
+                      <td>11:45 - 12:40</td>
+                         <td>Ingles </td>
+                      <td>Sociales</td>
+                        <td>Ingles </td>
+                        <td>Tutoria </td>
+                        <td>Ingles </td>
+               </tr>
+               <!-- 
+               <tr>
+                        <td>12:40 - 13:35</td>
+                        <td rownspan="2">Tecnologia </td>
+                        <td>Eduacio Fisica </td>
+                        <td>Plastica </td>
+                        <td>Religion </td>
+                        <td>Tecnologia </td>
+               </tr>
+
+               este es un error comun debido a que remueve o mueve o afecta al seo de la pagina por el error de etiquetas
+               la forma correcta para hacerlo es la siguiente:
+                -->
+                <tr>
+                    <td>12:40 - 13:35</td>
+                    <td rowspan="2">Tecnologia </td>
+                    <td>Eduacio Fisica </td>
+                    <td>Plastica </td>
+                    <td>Religion </td>
+                    <td rowspan="2">Tecnologia </td>
+           </tr>
+               <tr>
+                         <td>13:35 - 14:30</td>
+                        
+                        <td>Frances </td>
+                        <td>Tecnologia </td>
+                        <td>Frances </td>
+                       
+               </tr>
+             </tbody>
+             <tfoot>
+               <tr>
+                        <td colspan="5">Total de asignaturas</td>
+                        <td>12</td>
+               </tr>
+             </tfoot>
+             </table>
+         </section>
+    </main>
+   
+   </body>
+</html>
+    

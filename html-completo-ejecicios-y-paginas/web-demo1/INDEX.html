@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENLACES</title>
+</head>
+<body>
+    <header>
+        <h1>HOME.</h1> 
+</header>
+<nav>
+    <p>
+       <p> <a href="/paginas/blog.html#post-1">Post 1</a></p>
+        <!-- para poder visualizar el menu de pagina se tiene que abrir el vicual code en la carpeta de raiz y no desde
+        otra carpeta porque no funciona proque son diferentes directorios. -->
+        <p><a href="/paginas/blog.html#post-2">Post 2</a></p>
+
+        <p><a href="/paginas/blog.html#post-3">Post 3</a></p>
+        <p><a href="/paginas/blog.html#post-4">Post 4</a></p>
+        <p><a href="/paginas/blog.html#post-5">Post 5</a></p>
+        <p><a href="/paginas/blog.html#post-6">Post 6</a></p>
+    </p>
+</nav>
+<!-- Atributos de "a"
+  "target": define donde se abrira el recurso solicitado. Por norma general 
+  siempreque uses rutas adsoluctas se coloca como valor "_blank", 
+
+  "download": Atributo boleano sirve para descargar el recurso solicitado
+  importante, el recurso debe estar en su mismo servidor.
+
+-->
+<main>
+  <a href="/paginas/contacto.html">/conctato./</a>
+  <br>
+  <a href="/">/Prueba/</a>
+  <br>
+  <a href="https://www.google.com.ar/" target="_self">/La pagina aparece en la misma pestaña/</a>
+  <br>
+  <a href="https://www.google.com.ar/" target="_blank">/La pagina se abre en una nueva pestaña</a>
+  <br>
+  <a href="INDEX.html" download>Se descarga la pagina o enlace que pongas</a>
+  <br>
+   <a href="/assets/gato-salvaje.jpg" download>DESCAGA DE GATO SALVAJE</a>
+   <!-- 
+       los archivos de imagenes o videos no se pueden descargar al menos que esten en el servidor de lo contrario
+       solo te llevara directo al enlace de la imagen o video que quieras descargar.
+    -->
+</main>
+
+</html>

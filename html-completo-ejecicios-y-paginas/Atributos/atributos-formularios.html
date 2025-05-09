@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos en Formularios</title>
+</head>
+<!-- 
+    placeholder -> Da ua pista de lo que el usuario tiene que introducir 
+
+    required -> Hace que un campo sea obligatorio
+    readonly -> Hace un campo sea de solo lectura.
+    desaibled -> Desativa el campo, no se podra escribir en el autofocus
+    min - max -> Estaclece el minimo y maximo de un campo numerico 
+    maxlength - minleght -> Establece el minimo y maximo de caracteres de un campo de texto
+    seleted ->Equivale a checked en los select, sirve para establecer un opcion por defecto
+    autofocus -> Para poner el foco por defecto al cargar el formulario.
+
+ -->
+<body>
+<header>
+    <h1>Atributos de Formularios</h1>
+</header>
+<main>
+    <form>
+        <fieldset>
+            <label for="name">Nombre</label>
+            <input type="text" value="name" placeholder="Tú nombre." required maxlength="20" minlength="5">
+
+            <label for="lastname">Apellido</label>
+            <input type="text" value="lastname" placeholder="Tú apellido." required maxlength="20" minlength="5">
+
+            <label for="lectura">Solo leible (readonly)</label>
+            <input type="text" value="lectura" readonly placeholder="Solo de lectura(readonly)" maxlength="20" minlength="5">
+            
+            <label for="lectura">Solo leible (disaibled)</label>
+            <input type="text" value="lectura" disabled placeholder="Solo de lectura (disabled" >
+
+<!-- 
+    El atributo readonly solo sirve de lectura pero cuando envia el formulario este no tendra problema
+    en general se usa el readonly y el otro no ya que eso genera fallos
+ -->
+            <label for="years">Años</label>
+            <select>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21" selected>21</option>
+
+            </select>
+            
+           
+            <label for="email">Email</label>
+            <input type="email" value="email" placeholder="Email" required maxlength="30" minlength="15">
+
+            <label for="telefono">Télefono</label>
+            <input type="tel" value="telefono" placeholder="Télefono" required autofocus>
+
+            <button>Enviar</button>
+        </fieldset>
+        
+    </form>
+</main>
+
+</body>
+</html>
